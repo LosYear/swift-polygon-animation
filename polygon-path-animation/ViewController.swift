@@ -49,6 +49,10 @@ class ViewController: NSViewController {
     }
     
     @IBAction func startAnimation(_ sender: Any) {
+        if !(state?.animationController.isActive)!, (state?.pathPolygon.points.count)! < 2 {
+            return
+        }
+        
         state?.animationController.isActive = !(state?.animationController.isActive ?? false)
         
         if (state?.animationController.isActive)! {
