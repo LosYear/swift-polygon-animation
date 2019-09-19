@@ -1,18 +1,8 @@
-//
-//  ViewController.swift
-//  polygon-path-animation
-//
-//  Created by Yaroslav on 09/09/2019.
-//  Copyright © 2019 Yaroslav. All rights reserved.
-//
-
 import Cocoa
 import SpriteKit
 
 class ViewController: NSViewController {
-    
-    var state: ApplicationState =  ApplicationState()
-    
+    var state: ApplicationState?
     
     @IBOutlet var skView: SKView!
     
@@ -21,16 +11,14 @@ class ViewController: NSViewController {
     
     @IBOutlet var toggleAnimationButton: NSButton!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
         if let view = self.skView {
             let scene = Scene(size: CGSize(width: view.frame.width * 2, height: view.frame.height * 2))
+            state = ApplicationState(scene: scene)
             scene.state = state
-            state.movingPath = MovingPath(scene: scene, lineWidth: 7, strokeColor: .blue, vertexColor: .orange, vertexRadius: 15, vertexPrefix: "p")
-            state.polygonPath = PolygonPath(scene: scene, lineWidth: 3, strokeColor: .systemGreen, vertexColor: .systemYellow, vertexRadius: 7)
             
             view.ignoresSiblingOrder = true
             scene.scaleMode = .aspectFill
@@ -42,43 +30,30 @@ class ViewController: NSViewController {
         }
     }
     
-    override var representedObject: Any? {
-        didSet {
-            // Update the view, if already loaded.
-        }
-    }
-    
     @IBAction func setPathMode(_ sender: Any) {
         pathModeButton.bezelColor = .systemBlue
         polygonModeButton.bezelColor = nil
         
-        state.mode = .path
+        state?.mode = .path
     }
     
     @IBAction func setPolygonMode(_ sender: Any) {
         pathModeButton.bezelColor = nil
         polygonModeButton.bezelColor = .systemBlue
         
-        state.mode = .polygon
+        state?.mode = .polygon
     }
     
-    
     @IBAction func closePath(_ sender: Any) {
-        state.getActivePath()?.finished = true
+        state?.activePath.pathClosed = true
     }
     
     @IBAction func startAnimation(_ sender: Any) {
-        if state.animationActive {
-            state.movingPath?.resetState()
-            state.polygonPath?.resetState()
-        }
+        state?.animationController.isActive = !(state?.animationController.isActive ?? false)
         
-        state.animationActive = !state.animationActive
-        
-        if state.animationActive {
+        if (state?.animationController.isActive)! {
             toggleAnimationButton.image = NSImage(named: "NSTouchBarRecordStopTemplate")
             toggleAnimationButton.bezelColor = .systemRed
-            
         }
         else {
             toggleAnimationButton.image = NSImage(named: "NSTouchBarPlayTemplate")
@@ -86,4 +61,3 @@ class ViewController: NSViewController {
         }
     }
 }
-

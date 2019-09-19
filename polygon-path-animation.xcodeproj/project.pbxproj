@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		C40BE43C2326980B006199C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40BE43B2326980B006199C9 /* AppDelegate.swift */; };
 		C40BE43E2326980B006199C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40BE43D2326980B006199C9 /* ViewController.swift */; };
-		C40BE4402326980B006199C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C40BE43F2326980B006199C9 /* Assets.xcassets */; };
 		C40BE4432326980B006199C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40BE4412326980B006199C9 /* Main.storyboard */; };
 		C40BE44E232698DE006199C9 /* ApplicationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40BE44D232698DE006199C9 /* ApplicationState.swift */; };
-		C40BE45023269BE0006199C9 /* MovingPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40BE44F23269BE0006199C9 /* MovingPath.swift */; };
+		C40BE45023269BE0006199C9 /* PathPolygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40BE44F23269BE0006199C9 /* PathPolygon.swift */; };
 		C40BE45223269BF0006199C9 /* BasePolygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40BE45123269BF0006199C9 /* BasePolygon.swift */; };
 		C40BE45423269E7B006199C9 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40BE45323269E7B006199C9 /* Scene.swift */; };
-		C491AC4B233011E50052359E /* PolygonPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = C491AC4A233011E50052359E /* PolygonPath.swift */; };
+		C42EEA692333E558005301E0 /* VerticiesControlsGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42EEA682333E558005301E0 /* VerticiesControlsGroup.swift */; };
+		C42EEA6B2333E954005301E0 /* CenterControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42EEA6A2333E954005301E0 /* CenterControl.swift */; };
+		C46C80092333D9910028C21D /* CGPoint+rotated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46C80082333D9910028C21D /* CGPoint+rotated.swift */; };
+		C48C819F2333989C00315660 /* AnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C819E2333989C00315660 /* AnimationController.swift */; };
+		C491AC4B233011E50052359E /* ShapePolygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C491AC4A233011E50052359E /* ShapePolygon.swift */; };
 		C4B4ACBA2332702F00F5023D /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B4ACB92332702F00F5023D /* Geometry.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,15 +26,18 @@
 		C40BE4382326980B006199C9 /* polygon-path-animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "polygon-path-animation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C40BE43B2326980B006199C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C40BE43D2326980B006199C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C40BE43F2326980B006199C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C40BE4422326980B006199C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C40BE4442326980B006199C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C40BE4452326980B006199C9 /* polygon_path_animation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = polygon_path_animation.entitlements; sourceTree = "<group>"; };
 		C40BE44D232698DE006199C9 /* ApplicationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationState.swift; sourceTree = "<group>"; };
-		C40BE44F23269BE0006199C9 /* MovingPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingPath.swift; sourceTree = "<group>"; };
+		C40BE44F23269BE0006199C9 /* PathPolygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathPolygon.swift; sourceTree = "<group>"; };
 		C40BE45123269BF0006199C9 /* BasePolygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePolygon.swift; sourceTree = "<group>"; };
 		C40BE45323269E7B006199C9 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
-		C491AC4A233011E50052359E /* PolygonPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonPath.swift; sourceTree = "<group>"; };
+		C42EEA682333E558005301E0 /* VerticiesControlsGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticiesControlsGroup.swift; sourceTree = "<group>"; };
+		C42EEA6A2333E954005301E0 /* CenterControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterControl.swift; sourceTree = "<group>"; };
+		C46C80082333D9910028C21D /* CGPoint+rotated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+rotated.swift"; sourceTree = "<group>"; };
+		C48C819E2333989C00315660 /* AnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationController.swift; sourceTree = "<group>"; };
+		C491AC4A233011E50052359E /* ShapePolygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapePolygon.swift; sourceTree = "<group>"; };
 		C4B4ACB92332702F00F5023D /* Geometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,9 +55,10 @@
 		C40BE42F2326980B006199C9 = {
 			isa = PBXGroup;
 			children = (
+				C42EEA6C2333ED7B005301E0 /* Animations */,
+				C46C80072333D9630028C21D /* Extensions */,
 				C4B4ACB82332701700F5023D /* Helpers */,
-				C40BE44C23269875006199C9 /* Classes */,
-				C40BE44B23269867006199C9 /* Graphics */,
+				C40BE44B23269867006199C9 /* Polygons */,
 				C40BE43A2326980B006199C9 /* polygon-path-animation */,
 				C40BE4392326980B006199C9 /* Products */,
 			);
@@ -68,9 +75,9 @@
 		C40BE43A2326980B006199C9 /* polygon-path-animation */ = {
 			isa = PBXGroup;
 			children = (
+				C40BE44D232698DE006199C9 /* ApplicationState.swift */,
 				C40BE43B2326980B006199C9 /* AppDelegate.swift */,
 				C40BE43D2326980B006199C9 /* ViewController.swift */,
-				C40BE43F2326980B006199C9 /* Assets.xcassets */,
 				C40BE4412326980B006199C9 /* Main.storyboard */,
 				C40BE4442326980B006199C9 /* Info.plist */,
 				C40BE4452326980B006199C9 /* polygon_path_animation.entitlements */,
@@ -79,22 +86,40 @@
 			path = "polygon-path-animation";
 			sourceTree = "<group>";
 		};
-		C40BE44B23269867006199C9 /* Graphics */ = {
+		C40BE44B23269867006199C9 /* Polygons */ = {
 			isa = PBXGroup;
 			children = (
-				C40BE44F23269BE0006199C9 /* MovingPath.swift */,
+				C40BE44F23269BE0006199C9 /* PathPolygon.swift */,
 				C40BE45123269BF0006199C9 /* BasePolygon.swift */,
-				C491AC4A233011E50052359E /* PolygonPath.swift */,
+				C491AC4A233011E50052359E /* ShapePolygon.swift */,
+				C42EEA6D2333ED98005301E0 /* Controls */,
 			);
-			path = Graphics;
+			path = Polygons;
 			sourceTree = "<group>";
 		};
-		C40BE44C23269875006199C9 /* Classes */ = {
+		C42EEA6C2333ED7B005301E0 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				C40BE44D232698DE006199C9 /* ApplicationState.swift */,
+				C48C819E2333989C00315660 /* AnimationController.swift */,
 			);
-			path = Classes;
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		C42EEA6D2333ED98005301E0 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				C42EEA682333E558005301E0 /* VerticiesControlsGroup.swift */,
+				C42EEA6A2333E954005301E0 /* CenterControl.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		C46C80072333D9630028C21D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C46C80082333D9910028C21D /* CGPoint+rotated.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		C4B4ACB82332701700F5023D /* Helpers */ = {
@@ -163,7 +188,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C40BE4402326980B006199C9 /* Assets.xcassets in Resources */,
 				C40BE4432326980B006199C9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,14 +199,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C42EEA6B2333E954005301E0 /* CenterControl.swift in Sources */,
+				C42EEA692333E558005301E0 /* VerticiesControlsGroup.swift in Sources */,
 				C40BE44E232698DE006199C9 /* ApplicationState.swift in Sources */,
 				C40BE45223269BF0006199C9 /* BasePolygon.swift in Sources */,
 				C40BE45423269E7B006199C9 /* Scene.swift in Sources */,
+				C46C80092333D9910028C21D /* CGPoint+rotated.swift in Sources */,
 				C40BE43E2326980B006199C9 /* ViewController.swift in Sources */,
-				C40BE45023269BE0006199C9 /* MovingPath.swift in Sources */,
+				C40BE45023269BE0006199C9 /* PathPolygon.swift in Sources */,
 				C4B4ACBA2332702F00F5023D /* Geometry.swift in Sources */,
+				C48C819F2333989C00315660 /* AnimationController.swift in Sources */,
 				C40BE43C2326980B006199C9 /* AppDelegate.swift in Sources */,
-				C491AC4B233011E50052359E /* PolygonPath.swift in Sources */,
+				C491AC4B233011E50052359E /* ShapePolygon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
