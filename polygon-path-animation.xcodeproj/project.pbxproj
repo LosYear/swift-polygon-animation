@@ -11,6 +11,12 @@
 		C40BE43E2326980B006199C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40BE43D2326980B006199C9 /* ViewController.swift */; };
 		C40BE4402326980B006199C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C40BE43F2326980B006199C9 /* Assets.xcassets */; };
 		C40BE4432326980B006199C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40BE4412326980B006199C9 /* Main.storyboard */; };
+		C40BE44E232698DE006199C9 /* ApplicationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40BE44D232698DE006199C9 /* ApplicationState.swift */; };
+		C40BE45023269BE0006199C9 /* MovingPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40BE44F23269BE0006199C9 /* MovingPath.swift */; };
+		C40BE45223269BF0006199C9 /* BasePolygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40BE45123269BF0006199C9 /* BasePolygon.swift */; };
+		C40BE45423269E7B006199C9 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40BE45323269E7B006199C9 /* Scene.swift */; };
+		C491AC4B233011E50052359E /* PolygonPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = C491AC4A233011E50052359E /* PolygonPath.swift */; };
+		C4B4ACBA2332702F00F5023D /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B4ACB92332702F00F5023D /* Geometry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +27,12 @@
 		C40BE4422326980B006199C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C40BE4442326980B006199C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C40BE4452326980B006199C9 /* polygon_path_animation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = polygon_path_animation.entitlements; sourceTree = "<group>"; };
+		C40BE44D232698DE006199C9 /* ApplicationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationState.swift; sourceTree = "<group>"; };
+		C40BE44F23269BE0006199C9 /* MovingPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingPath.swift; sourceTree = "<group>"; };
+		C40BE45123269BF0006199C9 /* BasePolygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePolygon.swift; sourceTree = "<group>"; };
+		C40BE45323269E7B006199C9 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		C491AC4A233011E50052359E /* PolygonPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonPath.swift; sourceTree = "<group>"; };
+		C4B4ACB92332702F00F5023D /* Geometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +49,9 @@
 		C40BE42F2326980B006199C9 = {
 			isa = PBXGroup;
 			children = (
+				C4B4ACB82332701700F5023D /* Helpers */,
+				C40BE44C23269875006199C9 /* Classes */,
+				C40BE44B23269867006199C9 /* Graphics */,
 				C40BE43A2326980B006199C9 /* polygon-path-animation */,
 				C40BE4392326980B006199C9 /* Products */,
 			);
@@ -59,8 +74,35 @@
 				C40BE4412326980B006199C9 /* Main.storyboard */,
 				C40BE4442326980B006199C9 /* Info.plist */,
 				C40BE4452326980B006199C9 /* polygon_path_animation.entitlements */,
+				C40BE45323269E7B006199C9 /* Scene.swift */,
 			);
 			path = "polygon-path-animation";
+			sourceTree = "<group>";
+		};
+		C40BE44B23269867006199C9 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				C40BE44F23269BE0006199C9 /* MovingPath.swift */,
+				C40BE45123269BF0006199C9 /* BasePolygon.swift */,
+				C491AC4A233011E50052359E /* PolygonPath.swift */,
+			);
+			path = Graphics;
+			sourceTree = "<group>";
+		};
+		C40BE44C23269875006199C9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C40BE44D232698DE006199C9 /* ApplicationState.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C4B4ACB82332701700F5023D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C4B4ACB92332702F00F5023D /* Geometry.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,8 +175,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C40BE44E232698DE006199C9 /* ApplicationState.swift in Sources */,
+				C40BE45223269BF0006199C9 /* BasePolygon.swift in Sources */,
+				C40BE45423269E7B006199C9 /* Scene.swift in Sources */,
 				C40BE43E2326980B006199C9 /* ViewController.swift in Sources */,
+				C40BE45023269BE0006199C9 /* MovingPath.swift in Sources */,
+				C4B4ACBA2332702F00F5023D /* Geometry.swift in Sources */,
 				C40BE43C2326980B006199C9 /* AppDelegate.swift in Sources */,
+				C491AC4B233011E50052359E /* PolygonPath.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
